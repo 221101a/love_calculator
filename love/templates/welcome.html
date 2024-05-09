@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>love calculator page !!!</h1>
+    <h2>{{msg}}</h2>
+    <form action="{% url 'user:store_user' %}" method="post">
+        {% csrf_token %}
+        <label for="name">enter your name</label>
+        <input typr="text" name="name">
+
+        <label for="love">enter your crush name</label>
+        <input type="text" name="love">
+
+        <input type="submit" value="submit">
+        <input type="reset" value="Clear">
+    </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>see all lovers detalis !!!!</h1>
+    <table border="1">
+        {% for data in user %}
+        <tr>
+            <th>user name:</th>
+            <td>{{data.user_name}}</td>
+            <th>user's love name:</th>
+            <td>{{data.user_love}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
